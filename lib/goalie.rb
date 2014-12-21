@@ -1,4 +1,4 @@
-require 'active_support/core_ext/exception'
+require 'active_support/core_ext/exception' if ActiveSupport::VERSION::MAJOR < 4
 require 'active_support/notifications'
 require 'action_dispatch/http/request'
 
