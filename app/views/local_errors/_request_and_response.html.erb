@@ -21,7 +21,7 @@
 <p><b>Parameters</b>: <pre><%=h request_dump %></pre></p>
 
 <p><a href="#" onclick="document.getElementById('session_dump').style.display='block'; return false;">Show session dump</a></p>
-<div id="session_dump" style="display:none"><pre><%= debug_hash @request.session %></pre></div>
+<div id="session_dump" style="display:none"><pre><%= debug_hash @request.session.to_hash %></pre></div>
 
 <p><a href="#" onclick="document.getElementById('env_dump').style.display='block'; return false;">Show env dump</a></p>
 <div id="env_dump" style="display:none"><pre><%= debug_hash @request.env %></pre></div>
